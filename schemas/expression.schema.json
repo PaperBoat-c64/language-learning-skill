@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://language-learning-skill.local/schemas/expression.schema.json",
+  "title": "Expression",
+  "description": "A fixed or semi-fixed multi-word unit: collocation, phrasal verb, idiom, colloquialism, slang, valency pattern, or grammatical fixed expression.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "text",
+    "type",
+    "meaningInContext",
+    "register",
+    "sentenceRefs",
+    "priority",
+    "confidence",
+    "needsVerification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^e\\d{3,4}$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Verbatim span as it appears in the source, with the observed inflection."
+    },
+    "type": {
+      "enum": [
+        "collocation",
+        "phrasal-verb",
+        "idiom",
+        "colloquialism",
+        "slang",
+        "valency",
+        "grammatical-expression"
+      ]
+    },
+    "literalMeaning": {
+      "type": "string",
+      "description": "Word-for-word reading. Required in substance for idioms and slang where it differs from the contextual meaning."
+    },
+    "meaningInContext": {
+      "type": "string",
+      "minLength": 1
+    },
+    "register": {
+      "enum": [
+        "formal",
+        "neutral",
+        "informal",
+        "colloquial",
+        "vulgar",
+        "literary",
+        "archaic",
+        "mixed"
+      ]
+    },
+    "region": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regionCertainty": {
+      "enum": ["verified", "probable", "unverified"],
+      "description": "Confidence in any regional claim. Use unverified rather than asserting."
+    },
+    "sensitivity": {
+      "enum": ["none", "mild", "offensive", "slur"]
+    },
+    "usageNotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "translation"],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "translation": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sentenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^s\\d{2,4}-\\d{2,4}$"
+      }
+    },
+    "priority": {
+      "enum": ["high", "medium", "low"]
+    },
+    "confidence": {
+      "enum": ["high", "medium", "low"]
+    },
+    "needsVerification": {
+      "type": "boolean"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

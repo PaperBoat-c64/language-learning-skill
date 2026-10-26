@@ -1,0 +1,656 @@
+{
+  "schemaVersion": "1.0",
+  "meta": {
+    "title": "Der platte Reifen",
+    "textLanguage": "de",
+    "explanationLanguage": "zh-CN",
+    "genre": "article",
+    "mode": "study",
+    "createdAt": "2026-10-26T12:00:00Z",
+    "register": "Colloquial first-person narrative with separable verbs",
+    "level": {
+      "strategy": "default-adaptive",
+      "declared": null
+    },
+    "notes": [
+      "示例用文本为本项目自拟，用于测试流程。"
+    ]
+  },
+  "source": {
+    "text": "Als ich letzten Winter mein altes Fahrrad aus dem Keller holte, war der Vorderreifen platt. Eigentlich wollte ich es gleich zur Werkstatt bringen, aber dann dachte ich mir: Das kriegst du auch allein hin.\n\nZwei Stunden und drei falsche Schläuche später saß ich fluchend auf dem Küchenboden. Zum Glück kam meine Nachbarin vorbei, die so etwas im Handumdrehen repariert. Sie hat mir gezeigt, worauf es ankommt — und seitdem flicke ich jeden Platten selbst.",
+    "characterCount": 454,
+    "sentenceCount": 5,
+    "integrity": "preserved"
+  },
+  "sentences": [
+    {
+      "id": "s01-01",
+      "paragraph": 1,
+      "order": 1,
+      "text": "Als ich letzten Winter mein altes Fahrrad aus dem Keller holte, war der Vorderreifen platt.",
+      "translation": "去年冬天，我把那辆旧自行车从地下室搬出来时，前轮胎瘪了。",
+      "vocabularyRefs": [
+        "v001",
+        "v002",
+        "v003"
+      ],
+      "grammarRefs": [
+        "g001"
+      ]
+    },
+    {
+      "id": "s01-02",
+      "paragraph": 1,
+      "order": 2,
+      "text": "Eigentlich wollte ich es gleich zur Werkstatt bringen, aber dann dachte ich mir: Das kriegst du auch allein hin.",
+      "translation": "本来我打算直接送去修车铺，可后来心想：这事儿你自己也搞得定。",
+      "vocabularyRefs": [],
+      "expressionRefs": [
+        "e001"
+      ],
+      "grammarRefs": [
+        "g002"
+      ]
+    },
+    {
+      "id": "s02-01",
+      "paragraph": 2,
+      "order": 3,
+      "text": "Zwei Stunden und drei falsche Schläuche später saß ich fluchend auf dem Küchenboden.",
+      "translation": "两个小时、三条不匹配的内胎之后，我一边骂骂咧咧一边坐在厨房地板上。",
+      "vocabularyRefs": [
+        "v004",
+        "v005"
+      ],
+      "grammarRefs": []
+    },
+    {
+      "id": "s02-02",
+      "paragraph": 2,
+      "order": 4,
+      "text": "Zum Glück kam meine Nachbarin vorbei, die so etwas im Handumdrehen repariert.",
+      "translation": "幸亏邻居路过——她修这种东西一转眼就好。",
+      "vocabularyRefs": [],
+      "expressionRefs": [
+        "e002",
+        "e003"
+      ],
+      "grammarRefs": [
+        "g003"
+      ]
+    },
+    {
+      "id": "s02-03",
+      "paragraph": 2,
+      "order": 5,
+      "text": "Sie hat mir gezeigt, worauf es ankommt — und seitdem flicke ich jeden Platten selbst.",
+      "translation": "她教了我关键在哪儿，从那以后，每个爆胎我都自己补。",
+      "vocabularyRefs": [],
+      "expressionRefs": [
+        "e004"
+      ],
+      "grammarRefs": [
+        "g004"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "v001",
+      "surface": "Vorderreifen",
+      "lemma": "Vorderreifen",
+      "pos": "noun",
+      "meaningInContext": "前轮胎；Vorder-（前面的）+ Reifen（轮胎）构成的复合名词。",
+      "morphology": {
+        "description": "复合名词，性别由最后一个成分 Reifen 决定，为阳性；复数形式通常仍为 Vorderreifen。",
+        "features": [
+          "compound",
+          "masculine",
+          "singular"
+        ]
+      },
+      "gender": "masculine",
+      "examples": [
+        {
+          "text": "Der Vorderreifen hat zu wenig Luft.",
+          "translation": "前轮胎气不足。"
+        }
+      ],
+      "confusions": [
+        {
+          "term": "Vorderreifen vs. Hinterreifen",
+          "distinction": "Vorderreifen 是前轮轮胎；Hinterreifen 是后轮轮胎。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "compound"
+      ]
+    },
+    {
+      "id": "v002",
+      "surface": "platt",
+      "lemma": "platt",
+      "pos": "adjective",
+      "meaningInContext": "（轮胎）瘪了的；口语中也常指“累瘫了”。",
+      "morphology": {
+        "description": "作表语用的形容词，本句不涉及变格。",
+        "features": [
+          "predicative"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Nach der Wanderung war ich völlig platt.",
+          "translation": "徒步之后我累瘫了。"
+        }
+      ],
+      "confusions": [
+        {
+          "term": "platt vs. flach",
+          "distinction": "platt 口语中常指轮胎瘪了或人累瘫；flach 指“平坦的”，是中性描写。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "v003",
+      "surface": "Keller",
+      "lemma": "Keller",
+      "pos": "noun",
+      "meaningInContext": "地下室、地窖；此处指存放自行车的楼下储藏空间。",
+      "morphology": {
+        "description": "阳性名词；本句受介词 aus 支配，用第三格 dem Keller。",
+        "features": [
+          "masculine",
+          "dative",
+          "singular"
+        ]
+      },
+      "gender": "masculine",
+      "examples": [
+        {
+          "text": "Die Fahrräder stehen im Keller.",
+          "translation": "自行车放在地下室里。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "case"
+      ]
+    },
+    {
+      "id": "v004",
+      "surface": "Schläuche",
+      "lemma": "Schlauch",
+      "pos": "noun",
+      "meaningInContext": "内胎；自行车语境中指 Fahrradschlauch，不是水管。",
+      "morphology": {
+        "description": "Schlauch 的复数形式：元音变音 + -e（Schlauch → Schläuche）。本句为第四格复数。",
+        "features": [
+          "masculine",
+          "plural",
+          "accusative",
+          "umlaut"
+        ]
+      },
+      "gender": "masculine",
+      "examples": [
+        {
+          "text": "Ich habe zwei neue Schläuche gekauft.",
+          "translation": "我买了两条新内胎。"
+        }
+      ],
+      "confusions": [
+        {
+          "term": "Schlauch vs. Reifen",
+          "distinction": "Schlauch 是内胎；Reifen 是外胎/轮胎整体。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "plural",
+        "contextual-sense"
+      ]
+    },
+    {
+      "id": "v005",
+      "surface": "fluchend",
+      "lemma": "fluchen",
+      "pos": "verb",
+      "meaningInContext": "骂骂咧咧地、咒骂着；现在分词作状语，修饰 saß。",
+      "morphology": {
+        "description": "fluchen 的现在分词（Partizip I）：fluchen + -d。此处作方式状语，不变格。",
+        "features": [
+          "present-participle",
+          "adverbial"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Er verließ fluchend den Raum.",
+          "translation": "他骂骂咧咧地离开了房间。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "participle"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "id": "e001",
+      "text": "Das kriegst du auch allein hin",
+      "type": "phrasal-verb",
+      "literalMeaning": "你也能独自把它弄到那边去。",
+      "meaningInContext": "这事儿你自己也搞得定；表示相信对方能独立完成。",
+      "register": "colloquial",
+      "sensitivity": "none",
+      "usageNotes": [
+        "原形为 es hinkriegen；本句中变位部分 kriegst 在第二位，可分前缀 hin 位于句末。",
+        "kriegen 偏口语；中性表达可用 schaffen。"
+      ],
+      "examples": [
+        {
+          "text": "Keine Sorge, das kriege ich hin.",
+          "translation": "别担心，这事儿我搞得定。"
+        }
+      ],
+      "alternatives": [
+        "hinbekommen",
+        "schaffen"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "separable",
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e002",
+      "text": "im Handumdrehen",
+      "type": "idiom",
+      "literalMeaning": "在手的转动之中。",
+      "meaningInContext": "一转眼、很快；形容动作迅速、毫不费力。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "examples": [
+        {
+          "text": "Sie hat das Problem im Handumdrehen gelöst.",
+          "translation": "她一转眼就把问题解决了。"
+        }
+      ],
+      "alternatives": [
+        "im Nu",
+        "blitzschnell"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e003",
+      "text": "Zum Glück",
+      "type": "collocation",
+      "meaningInContext": "幸亏、幸运的是；用于引出避免了坏结果的情况。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "examples": [
+        {
+          "text": "Zum Glück hatte ich einen Regenschirm dabei.",
+          "translation": "幸亏我带了伞。"
+        }
+      ],
+      "alternatives": [
+        "glücklicherweise"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e004",
+      "text": "worauf es ankommt",
+      "type": "grammatical-expression",
+      "literalMeaning": "它取决于什么。",
+      "meaningInContext": "关键在于什么、重要的是什么；此处指邻居教她修胎的关键点。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "usageNotes": [
+        "原形为 es kommt auf etwas an（取决于、重要的是）。",
+        "worauf 是代词性副词，把介词 auf 的宾语前置；从句中变位动词 ankommt 位于句末。"
+      ],
+      "examples": [
+        {
+          "text": "Sie erklärte mir, worauf es beim Kochen ankommt.",
+          "translation": "她向我解释了做饭的关键在哪里。"
+        }
+      ],
+      "alternatives": [
+        "was wichtig ist"
+      ],
+      "sentenceRefs": [
+        "s02-03"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "separable",
+        "pronominal-adverb"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g001",
+      "title": "als 从句与主句倒装",
+      "explanation": "由 als 引导的时间从句中，变位动词 holte 位于句末。整个从句占据主句的第一位，因此主句的变位动词 war 紧跟在从句之后，主语 der Vorderreifen 反而位于动词之后：war der Vorderreifen platt。这是德语主句的框型结构（动词第二位）在从句前置时的必然结果。",
+      "pattern": "Als + … + Verb(final), Verb + Subject + …",
+      "examples": [
+        {
+          "text": "Als es zu regnen begann, gingen wir nach Hause.",
+          "translation": "开始下雨时，我们回家了。"
+        }
+      ],
+      "pitfalls": [
+        "从句中使用主句语序：*Als ich holte das Fahrrad …",
+        "主句忘记倒装：*…, der Vorderreifen war platt。"
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g002",
+      "title": "可分动词 hinkriegen：前缀后置",
+      "explanation": "hinkriegen 由前缀 hin- 和动词 kriegen 构成。主句中变位部分 kriegst 位于第二位，前缀 hin 移到句末：Das kriegst du auch allein hin。若在从句中或与情态动词连用，则保持整体：…, dass du das allein hinkriegst；du willst das allein hinkriegen。",
+      "pattern": "Verb (position 2) … Präfix (clause end)",
+      "examples": [
+        {
+          "text": "Ich rufe dich morgen an.",
+          "translation": "我明天给你打电话。（anrufen 的前缀 an 后置）"
+        }
+      ],
+      "pitfalls": [
+        "主句中把前缀留在动词旁，破坏框型结构。",
+        "从句中把可分动词拆开。"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g003",
+      "title": "关系从句：die so etwas repariert",
+      "explanation": "die 指代阴性单数名词 Nachbarin，关系从句中变位动词 repariert 位于句末。这里用现在时表示她一贯会修这类东西，而不是某一次具体动作；时间性由主句 kam … vorbei 提供。",
+      "pattern": "…, der/die/das … + Verb(final)",
+      "examples": [
+        {
+          "text": "Der Mann, der dort steht, ist mein Nachbar.",
+          "translation": "站在那里的那个男人是我的邻居。"
+        }
+      ],
+      "pitfalls": [
+        "关系从句使用主句语序。",
+        "关系代词的性、数、格与先行词不一致。"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g004",
+      "title": "seitdem 与现在时",
+      "explanation": "seitdem 表示从过去某一时点持续到现在，主句用现在时：seitdem flicke ich jeden Platten selbst。英语对应 since + 现在完成时，但德语这里不用完成时来标记持续。",
+      "pattern": "seitdem + Präsens",
+      "examples": [
+        {
+          "text": "Seitdem ich hier wohne, fahre ich mit dem Rad.",
+          "translation": "自从住在这里，我就骑自行车了。"
+        }
+      ],
+      "pitfalls": [
+        "误用完成时：*seitdem habe ich jeden Platten selbst geflickt，会被理解为已完成的一次性动作。"
+      ],
+      "sentenceRefs": [
+        "s02-03"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    }
+  ],
+  "exercises": [
+    {
+      "id": "x001",
+      "type": "meaning",
+      "prompt": "在 “war der Vorderreifen platt” 中，platt 的意思是：",
+      "options": [
+        "A. 平坦的",
+        "B. 瘪了的",
+        "C. 便宜的",
+        "D. 累瘫的"
+      ],
+      "answer": {
+        "key": "B",
+        "explanation": "platt 修饰 Vorderreifen，指轮胎没气、瘪了。A 对应 flach；D 是 platt 的另一个口语义，但本句主语是轮胎；C 与词义无关。"
+      },
+      "difficulty": "easy",
+      "relatedSentences": [
+        "s01-01"
+      ],
+      "relatedVocabulary": [
+        "v002"
+      ]
+    },
+    {
+      "id": "x002",
+      "type": "cloze",
+      "prompt": "填入可分动词 hinkriegen 的正确形式：Das ______ du auch allein ______.",
+      "answer": {
+        "key": "kriegst … hin",
+        "explanation": "主句中变位动词 kriegst 位于第二位，可分前缀 hin 移到句末。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s01-02"
+      ],
+      "relatedExpressions": [
+        "e001"
+      ],
+      "relatedGrammar": [
+        "g002"
+      ]
+    },
+    {
+      "id": "x003",
+      "type": "grammar-discrimination",
+      "prompt": "选择语序正确的句子：",
+      "options": [
+        "A. Als ich das Fahrrad holte, der Reifen war platt.",
+        "B. Als ich das Fahrrad holte, war der Reifen platt.",
+        "C. Als ich holte das Fahrrad, war der Reifen platt."
+      ],
+      "answer": {
+        "key": "B",
+        "explanation": "als 从句中变位动词 holte 位于句末；从句占据主句第一位，主句必须倒装为 war der Reifen platt。A 主句未倒装；C 从句语序错误。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s01-01"
+      ],
+      "relatedGrammar": [
+        "g001"
+      ]
+    },
+    {
+      "id": "x004",
+      "type": "translation",
+      "prompt": "把下面这句话译成中文，注意关系从句和 im Handumdrehen：Zum Glück kam meine Nachbarin vorbei, die so etwas im Handumdrehen repariert.",
+      "answer": {
+        "model": "幸亏邻居路过——她修这种东西一转眼就好。",
+        "rubric": [
+          "译出 im Handumdrehen 的“很快、毫不费力”",
+          "关系从句的先行词是 Nachbarin，不是“东西”",
+          "中文自然，保留“幸亏”的语气"
+        ],
+        "explanation": "die 指 Nachbarin；现在时 repariert 表示她一贯会修，不限于这一次。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s02-02"
+      ],
+      "relatedExpressions": [
+        "e002",
+        "e003"
+      ],
+      "relatedGrammar": [
+        "g003"
+      ]
+    },
+    {
+      "id": "x005",
+      "type": "recall-card",
+      "prompt": "用 es hinkriegen 的完成时形式写一句德语（注意可分动词的过去分词）。",
+      "answer": {
+        "model": "Ich habe es endlich hingekriegt.",
+        "rubric": [
+          "使用 hinkriegen 的正确过去分词 hingekriegt",
+          "完成时语序正确（haben + 分词置于句末）",
+          "语义自然，体现“搞定”"
+        ],
+        "explanation": "可分动词的过去分词把 ge- 放在前缀与词干之间：hin + ge + kriegt → hingekriegt。"
+      },
+      "difficulty": "hard",
+      "relatedExpressions": [
+        "e001"
+      ],
+      "relatedGrammar": [
+        "g002"
+      ]
+    }
+  ],
+  "qa": {
+    "checks": [
+      {
+        "id": "c01",
+        "name": "原文完整性",
+        "status": "pass",
+        "notes": "句子拼接与 source.txt 一致；ß/变音符号无损失。"
+      },
+      {
+        "id": "c02",
+        "name": "对照对齐",
+        "status": "pass",
+        "notes": "5/5 句。"
+      },
+      {
+        "id": "c03",
+        "name": "词形与原形",
+        "status": "pass",
+        "notes": "Schläuche 的复数变化、Keller 的第三格已说明。"
+      },
+      {
+        "id": "c04",
+        "name": "语境词义",
+        "status": "pass",
+        "notes": "Schlauch 按自行车语境取“内胎”。"
+      },
+      {
+        "id": "c05",
+        "name": "语法解释",
+        "status": "pass",
+        "notes": "框型结构、可分动词、关系从句、seitdem 的解释均与本句一致。"
+      },
+      {
+        "id": "c06",
+        "name": "表达分类",
+        "status": "pass",
+        "notes": "hinkriegen 判为可分动词；worauf es ankommt 判为语法性固定表达。"
+      },
+      {
+        "id": "c07",
+        "name": "语域与地区",
+        "status": "pass",
+        "notes": "kriegen 的口语语域已标注；未作地区断言。"
+      },
+      {
+        "id": "c08",
+        "name": "冗余",
+        "status": "pass",
+        "notes": "词汇与表达无重复收录。"
+      },
+      {
+        "id": "c09",
+        "name": "无依据声明",
+        "status": "pass",
+        "notes": "未标注 CEFR 或词频。"
+      },
+      {
+        "id": "c10",
+        "name": "Schema 结构",
+        "status": "pass",
+        "notes": "通过 JSON Schema 校验；ID 唯一性与交叉引用另由内置检查核对。"
+      },
+      {
+        "id": "c11",
+        "name": "练习可判定",
+        "status": "pass",
+        "notes": "5 题均有答案或评分标准。"
+      }
+    ],
+    "summary": "pass",
+    "validator": "jsonschema (Draft 2020-12, validated at build time)",
+    "reviewedAt": "2026-10-26T12:00:00Z"
+  }
+}

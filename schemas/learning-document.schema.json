@@ -1,0 +1,306 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://language-learning-skill.local/schemas/learning-document.schema.json",
+  "title": "LearningDocument",
+  "description": "Top-level learning document produced by the language-learning-skill. Sentences, vocabulary, expressions, and exercises are defined in sibling schemas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "meta",
+    "source",
+    "sentences",
+    "vocabulary",
+    "expressions",
+    "grammar",
+    "exercises",
+    "qa"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "meta": {
+      "$ref": "#/$defs/meta"
+    },
+    "source": {
+      "$ref": "#/$defs/source"
+    },
+    "sentences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "sentence.schema.json"
+      }
+    },
+    "vocabulary": {
+      "type": "array",
+      "items": {
+        "$ref": "vocabulary.schema.json"
+      }
+    },
+    "expressions": {
+      "type": "array",
+      "items": {
+        "$ref": "expression.schema.json"
+      }
+    },
+    "grammar": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/grammarPoint"
+      }
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "$ref": "exercise.schema.json"
+      }
+    },
+    "qa": {
+      "$ref": "#/$defs/qa"
+    }
+  },
+  "$defs": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "textLanguage",
+        "explanationLanguage",
+        "genre",
+        "mode",
+        "createdAt",
+        "level"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "textLanguage": {
+          "enum": ["en", "fr", "es", "de"]
+        },
+        "explanationLanguage": {
+          "type": "string",
+          "minLength": 2,
+          "description": "BCP-47 style tag or language name, e.g. zh-CN."
+        },
+        "genre": {
+          "enum": [
+            "news",
+            "article",
+            "fiction",
+            "dialogue",
+            "lyrics",
+            "email",
+            "social-media",
+            "academic",
+            "other"
+          ]
+        },
+        "mode": {
+          "enum": ["study", "compact", "cards", "exercise-sheet", "json"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "register": {
+          "type": "string",
+          "description": "Free-text description of the source register, e.g. neutral journalistic."
+        },
+        "level": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy"],
+          "properties": {
+            "strategy": {
+              "enum": ["default-adaptive", "user-specified"]
+            },
+            "declared": {
+              "type": ["string", "null"],
+              "description": "The learner's own words or stated level. Not an assessment by the skill."
+            }
+          }
+        },
+        "batch": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["index", "total"],
+          "properties": {
+            "index": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "total": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "paragraphRange": {
+              "type": "string",
+              "pattern": "^\\d+(?:-\\d+)?$"
+            }
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "characterCount", "sentenceCount", "integrity"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The source exactly as supplied, before segmentation."
+        },
+        "characterCount": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sentenceCount": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "integrity": {
+          "enum": ["preserved", "whitespace-normalized", "modified-flag"],
+          "description": "preserved = verbatim; whitespace-normalized = only line endings/spacing changed; modified-flag = something else changed and is disclosed below."
+        },
+        "normalizationNotes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "copyrightNote": {
+          "type": "string"
+        }
+      }
+    },
+    "grammarPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "explanation",
+        "sentenceRefs",
+        "confidence",
+        "needsVerification"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^g\\d{3,4}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pattern": {
+          "type": "string"
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text", "translation"],
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "translation": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "pitfalls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sentenceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^s\\d{2,4}-\\d{2,4}$"
+          }
+        },
+        "priority": {
+          "enum": ["high", "medium", "low"]
+        },
+        "confidence": {
+          "enum": ["high", "medium", "low"]
+        },
+        "needsVerification": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["checks", "summary"],
+      "properties": {
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name", "status"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^c\\d{2}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": ["pass", "fail", "unverified", "not-applicable"]
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "summary": {
+          "enum": ["pass", "pass-with-disclosures", "fail"]
+        },
+        "validator": {
+          "type": "string"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

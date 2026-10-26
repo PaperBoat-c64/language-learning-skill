@@ -1,0 +1,678 @@
+{
+  "schemaVersion": "1.0",
+  "meta": {
+    "title": "El taller de cerámica",
+    "textLanguage": "es",
+    "explanationLanguage": "zh-CN",
+    "genre": "article",
+    "mode": "study",
+    "createdAt": "2026-10-26T12:00:00Z",
+    "register": "Informal first-person narrative, neutral vocabulary",
+    "level": {
+      "strategy": "default-adaptive",
+      "declared": null
+    },
+    "notes": [
+      "示例用文本为本项目自拟，用于测试流程。"
+    ]
+  },
+  "source": {
+    "text": "El verano pasado me apunté a un taller de cerámica sin saber muy bien qué esperar. La primera clase fue un desastre: se me cayó un jarrón al suelo y, para colmo, llegué tarde porque me quedé dormido.\n\nPensé en dejarlo, pero la profesora, que debía de tener mucha paciencia, me dijo que nadie nace sabiendo y que lo importante era volver la semana siguiente. Por si acaso, apunté la hora en tres sitios distintos. Hoy tengo seis tazas torcidas que uso todos los días, y no las cambiaría por nada.",
+    "characterCount": 495,
+    "sentenceCount": 5,
+    "integrity": "preserved"
+  },
+  "sentences": [
+    {
+      "id": "s01-01",
+      "paragraph": 1,
+      "order": 1,
+      "text": "El verano pasado me apunté a un taller de cerámica sin saber muy bien qué esperar.",
+      "translation": "去年夏天，我报了一个陶艺工作坊，其实并不太清楚会是什么样。",
+      "vocabularyRefs": [
+        "v001",
+        "v002"
+      ],
+      "grammarRefs": []
+    },
+    {
+      "id": "s01-02",
+      "paragraph": 1,
+      "order": 2,
+      "text": "La primera clase fue un desastre: se me cayó un jarrón al suelo y, para colmo, llegué tarde porque me quedé dormido.",
+      "translation": "第一节课简直一团糟：一个花瓶不小心掉到了地上，更糟的是，我还因为睡过头迟到了。",
+      "vocabularyRefs": [
+        "v003",
+        "v004"
+      ],
+      "expressionRefs": [
+        "e001"
+      ],
+      "grammarRefs": [
+        "g001",
+        "g002"
+      ]
+    },
+    {
+      "id": "s02-01",
+      "paragraph": 2,
+      "order": 3,
+      "text": "Pensé en dejarlo, pero la profesora, que debía de tener mucha paciencia, me dijo que nadie nace sabiendo y que lo importante era volver la semana siguiente.",
+      "translation": "我动过放弃的念头，但老师——她一定特别有耐心——对我说，没有人是天生就会的，重要的是下周再来。",
+      "vocabularyRefs": [],
+      "expressionRefs": [
+        "e003",
+        "e004"
+      ],
+      "grammarRefs": [
+        "g002",
+        "g003",
+        "g004"
+      ]
+    },
+    {
+      "id": "s02-02",
+      "paragraph": 2,
+      "order": 4,
+      "text": "Por si acaso, apunté la hora en tres sitios distintos.",
+      "translation": "以防万一，我把时间记在了三个不同的地方。",
+      "vocabularyRefs": [],
+      "expressionRefs": [
+        "e002"
+      ],
+      "grammarRefs": []
+    },
+    {
+      "id": "s02-03",
+      "paragraph": 2,
+      "order": 5,
+      "text": "Hoy tengo seis tazas torcidas que uso todos los días, y no las cambiaría por nada.",
+      "translation": "如今我有六只歪歪扭扭的杯子，每天都在用，拿什么都不换。",
+      "vocabularyRefs": [
+        "v005"
+      ],
+      "expressionRefs": [
+        "e005"
+      ],
+      "grammarRefs": []
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "v001",
+      "surface": "apunté",
+      "lemma": "apuntarse",
+      "pos": "verb",
+      "meaningInContext": "报名参加；此处指报名参加陶艺工作坊。",
+      "morphology": {
+        "description": "代动词 apuntarse 的 pretérito perfecto simple 第一人称单数；与格/自反代词 me 位于动词前：me apunté。",
+        "features": [
+          "pronominal",
+          "pretérito",
+          "first-person-singular"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Me apunté al curso de natación.",
+          "translation": "我报了游泳课。"
+        }
+      ],
+      "commonErrors": [
+        "混淆 apuntar 与 apuntarse：apuntar 可指“记录、指向”，apuntarse a 才是“报名参加”。"
+      ],
+      "confusions": [
+        {
+          "term": "apuntarse a vs. inscribirse en",
+          "distinction": "apuntarse a 更口语、常用；inscribirse en 更正式，常见于机构文件。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "pronominal"
+      ]
+    },
+    {
+      "id": "v002",
+      "surface": "taller",
+      "lemma": "taller",
+      "pos": "noun",
+      "meaningInContext": "工作坊、短期课程；此处指陶艺工作坊。",
+      "morphology": {
+        "description": "阳性单数名词；复数形式为 talleres（重音位置随之改变）。",
+        "features": [
+          "masculine",
+          "singular"
+        ]
+      },
+      "gender": "masculine",
+      "examples": [
+        {
+          "text": "El taller empieza a las diez.",
+          "translation": "工作坊十点开始。"
+        }
+      ],
+      "confusions": [
+        {
+          "term": "taller vs. curso",
+          "distinction": "taller 强调动手实践的工作坊；curso 泛指课程，可以是理论性的。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "v003",
+      "surface": "jarrón",
+      "lemma": "jarrón",
+      "pos": "noun",
+      "meaningInContext": "花瓶、大陶罐；此处指陶艺课上的一件花瓶。",
+      "morphology": {
+        "description": "阳性单数名词；复数形式为 jarrones。",
+        "features": [
+          "masculine",
+          "singular"
+        ]
+      },
+      "gender": "masculine",
+      "examples": [
+        {
+          "text": "Puso las flores en un jarrón azul.",
+          "translation": "她把花插进了一个蓝色的花瓶。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "v004",
+      "surface": "quedé",
+      "lemma": "quedarse",
+      "pos": "verb",
+      "meaningInContext": "进入某种状态；quedarse dormido 意为“睡着、睡过头”。",
+      "morphology": {
+        "description": "代动词 quedarse 的 pretérito 第一人称单数；此处与过去分词 dormido 构成状态表达。",
+        "features": [
+          "pronominal",
+          "pretérito",
+          "first-person-singular"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Me quedé dormido en el sofá.",
+          "translation": "我在沙发上睡着了。"
+        }
+      ],
+      "commonErrors": [
+        "把 quedarse dormido 误解为“留下来睡觉”；它表示“睡着（了）”，常含“睡过头/没察觉”的意味。"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "pronominal",
+        "false-friend"
+      ]
+    },
+    {
+      "id": "v005",
+      "surface": "torcidas",
+      "lemma": "torcido",
+      "pos": "adjective",
+      "meaningInContext": "歪的、扭曲变形的；此处形容手工杯子形状不规整。",
+      "morphology": {
+        "description": "torcido 的阴性复数形式，与阴性复数名词 tazas 保持一致。",
+        "features": [
+          "feminine",
+          "plural",
+          "agreement"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Las ramas torcidas parecían brazos.",
+          "translation": "扭曲的树枝看起来像手臂。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-03"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "agreement"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "id": "e001",
+      "text": "para colmo",
+      "type": "idiom",
+      "literalMeaning": "作为顶点、作为加料。",
+      "meaningInContext": "更糟的是、雪上加霜；用于在已有坏情况上再添一件坏事。",
+      "register": "informal",
+      "sensitivity": "none",
+      "examples": [
+        {
+          "text": "Perdí el autobús y, para colmo, empezó a llover.",
+          "translation": "我错过了公交车，更糟的是，还开始下雨了。"
+        }
+      ],
+      "alternatives": [
+        "encima",
+        "por si fuera poco"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e002",
+      "text": "Por si acaso",
+      "type": "collocation",
+      "meaningInContext": "以防万一；表示为了应对可能发生的情况而预先做某事。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "usageNotes": [
+        "可置于句首或句末，位置较灵活。",
+        "后接陈述式，因为所设想的情况被视为可能发生。"
+      ],
+      "examples": [
+        {
+          "text": "Lleva el paraguas, por si acaso.",
+          "translation": "带上伞吧，以防万一。"
+        }
+      ],
+      "alternatives": [
+        "por si las moscas"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false,
+      "notes": [
+        "句首大写为原文形式；词条规范形式为 por si acaso。"
+      ]
+    },
+    {
+      "id": "e003",
+      "text": "nadie nace sabiendo",
+      "type": "idiom",
+      "literalMeaning": "没有人是出生时就会的。",
+      "meaningInContext": "没有人天生就会；用来安慰初学者，说明技能需要学习。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "examples": [
+        {
+          "text": "No te preocupes por el error: nadie nace sabiendo.",
+          "translation": "别为这个错误担心，没有人天生就会。"
+        }
+      ],
+      "alternatives": [
+        "todo se aprende",
+        "a base de practicar"
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e004",
+      "text": "debía de tener",
+      "type": "grammatical-expression",
+      "literalMeaning": "字面：‘她应当拥有’；但加 de 后不表义务，而表推测。",
+      "meaningInContext": "表示对过去情况的推测：“她一定/大概很有耐心”。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "usageNotes": [
+        "deber de + 不定式表示推测；deber + 不定式表示义务或安排。",
+        "本句用 imperfecto（debía）而非 pretérito，是因为描写当时的背景判断。"
+      ],
+      "examples": [
+        {
+          "text": "Debe de estar en casa.",
+          "translation": "他大概在家。"
+        }
+      ],
+      "alternatives": [
+        "supongo que tenía",
+        "probablemente tenía"
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e005",
+      "text": "no las cambiaría por nada",
+      "type": "idiom",
+      "literalMeaning": "我不会拿它们换任何东西。",
+      "meaningInContext": "我什么都不换；用夸张方式表达非常珍视。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "usageNotes": [
+        "结构为 no cambiaría X por nada；X 用直接宾语代词时置于动词前：no las cambiaría。",
+        "条件式在这里表达假设性的“无论给什么都不换”。"
+      ],
+      "examples": [
+        {
+          "text": "Este cuadro no lo cambiaría por nada.",
+          "translation": "这幅画我拿什么都不换。"
+        }
+      ],
+      "alternatives": [
+        "no lo cambiaría por nada del mundo"
+      ],
+      "sentenceRefs": [
+        "s02-03"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g001",
+      "title": "意外 se：se me cayó",
+      "explanation": "se + 与格代词（me/te/le/nos/os/les）+ 第三人称动词表示非自愿发生的事，与格代词标出受影响的人。“se me cayó un jarrón”字面是“一个花瓶对我掉落了”，实际是“一个花瓶（不小心）从我这儿掉了”。它既不是反身，也不是被动。",
+      "pattern": "se + me/te/le/nos/os/les + verb (3rd person)",
+      "examples": [
+        {
+          "text": "Se le olvidó la llave.",
+          "translation": "他忘了钥匙（不是故意忘的）。"
+        }
+      ],
+      "pitfalls": [
+        "把它当作反身动词，译成“花瓶自己掉了”，丢掉“不小心/受影响”的含义。",
+        "漏掉与格代词，改变受影响者或使句子不自然。"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g002",
+      "title": "pretérito 与 imperfecto：事件与背景",
+      "explanation": "fue、se me cayó、llegué、me quedé 用 pretérito，表示一个个完成的事件；debía de tener、era 用 imperfecto，描写背景、状态和当时的判断。叙述中两者交替，构成前景与背景。",
+      "pattern": "pretérito (event) vs. imperfecto (background, state)",
+      "examples": [
+        {
+          "text": "Cuando llegué, la clase ya había empezado.",
+          "translation": "我到的时候，课已经开始了。"
+        }
+      ],
+      "pitfalls": [
+        "把背景描写也写成 pretérito，使叙述变成一连串事件。",
+        "把 imperfecto 误解为“更早的过去”。"
+      ],
+      "sentenceRefs": [
+        "s01-02",
+        "s02-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g003",
+      "title": "deber 与 deber de：义务 vs. 推测",
+      "explanation": "debía de tener 中，deber de + 不定式表示推测：“她一定/大概很有耐心”。若说 debía tener，则是“她应该有/必须拥有”，属于义务或安排。是否加 de 改变了意思，而不是文体差异。",
+      "pattern": "deber de + infinitivo (probability) / deber + infinitivo (obligation)",
+      "examples": [
+        {
+          "text": "Debe de estar en casa.",
+          "translation": "他大概在家。"
+        },
+        {
+          "text": "Debe estar en casa a las ocho.",
+          "translation": "他八点必须到家。"
+        }
+      ],
+      "pitfalls": [
+        "把推测义写成 deber + 不定式。",
+        "在表示义务时误加 de。"
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g004",
+      "title": "中性冠词 lo + 形容词",
+      "explanation": "lo importante 把形容词名词化，表示“重要的（事情/方面）”。中性 lo 不指某个具体的阳性或阴性名词，因此不参与性数一致。",
+      "pattern": "lo + adjective",
+      "examples": [
+        {
+          "text": "Lo difícil es empezar.",
+          "translation": "难的是开始。"
+        }
+      ],
+      "pitfalls": [
+        "把 lo 当作阳性冠词，写成 *el importante 来表示抽象概念。",
+        "让后面的形容词与某个隐含名词强行配合。"
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    }
+  ],
+  "exercises": [
+    {
+      "id": "x001",
+      "type": "meaning",
+      "prompt": "在 “y, para colmo, llegué tarde” 中，para colmo 的意思是：",
+      "options": [
+        "A. 作为总结",
+        "B. 更糟的是、雪上加霜",
+        "C. 幸运的是",
+        "D. 最终"
+      ],
+      "answer": {
+        "key": "B",
+        "explanation": "para colmo 在已有坏情况上再加一层坏消息。A 是总结义；C 相反；D 只表时间，不含“更糟”的评价。"
+      },
+      "difficulty": "easy",
+      "relatedSentences": [
+        "s01-02"
+      ],
+      "relatedExpressions": [
+        "e001"
+      ]
+    },
+    {
+      "id": "x002",
+      "type": "cloze",
+      "prompt": "用括号中动词的正确形式填空：La primera clase fue un desastre: se me ______ (caer) un jarrón al suelo.",
+      "answer": {
+        "key": "cayó",
+        "explanation": "意外 se 结构中，动词按第三人称与 jarrón 一致，叙述过去事件用 pretérito，故为 cayó。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s01-02"
+      ],
+      "relatedVocabulary": [
+        "v003"
+      ],
+      "relatedGrammar": [
+        "g001"
+      ]
+    },
+    {
+      "id": "x003",
+      "type": "grammar-discrimination",
+      "prompt": "选择最合适的形式：La profesora, que ______ mucha paciencia, me dijo que volviera.",
+      "options": [
+        "A. debía de tener",
+        "B. debía tener",
+        "C. debe de tener"
+      ],
+      "answer": {
+        "key": "A",
+        "explanation": "这里是对过去情况的推测（“她一定很有耐心”），用 deber de + 不定式，且用 imperfecto 描写背景。B 表示义务/安排；C 的现在时与过去叙述不符。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s02-01"
+      ],
+      "relatedGrammar": [
+        "g003"
+      ]
+    },
+    {
+      "id": "x004",
+      "type": "translation",
+      "prompt": "把下面这句话译成中文，注意条件式与双重否定的语气：Hoy tengo seis tazas torcidas que uso todos los días, y no las cambiaría por nada.",
+      "answer": {
+        "model": "如今我有六只歪歪扭扭的杯子，每天都在用，拿什么都不换。",
+        "rubric": [
+          "译出 no las cambiaría por nada 的夸张珍视语气",
+          "torcidas 译为“歪的/歪歪扭扭的”，不译成“扭曲的（贬义）”",
+          "中文自然，保留第一人称叙述"
+        ],
+        "explanation": "条件式 cambiaría 在此表达假设性的“无论给什么都不换”，是夸张的珍视表达。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s02-03"
+      ],
+      "relatedVocabulary": [
+        "v005"
+      ],
+      "relatedExpressions": [
+        "e005"
+      ]
+    },
+    {
+      "id": "x005",
+      "type": "recall-card",
+      "prompt": "用意外 se 结构写一句西班牙语，描述一次不小心发生的事（如忘记、掉落、丢失）。",
+      "answer": {
+        "model": "Se me olvidó el paraguas en casa.",
+        "rubric": [
+          "使用 se + 与格代词 + 第三人称动词的结构",
+          "动词时态与语境一致",
+          "句子自然，受影响者明确"
+        ],
+        "explanation": "例如 se me olvidó…（我忘了……）、se me cayó…（我这儿掉了……）。与格代词标出受影响的人。"
+      },
+      "difficulty": "hard",
+      "relatedGrammar": [
+        "g001"
+      ]
+    }
+  ],
+  "qa": {
+    "checks": [
+      {
+        "id": "c01",
+        "name": "原文完整性",
+        "status": "pass",
+        "notes": "句子拼接与 source.txt 一致。"
+      },
+      {
+        "id": "c02",
+        "name": "对照对齐",
+        "status": "pass",
+        "notes": "5/5 句。"
+      },
+      {
+        "id": "c03",
+        "name": "词形与原形",
+        "status": "pass",
+        "notes": "apunté、quedé 的代动词词形已说明；surface 均可在句中定位。"
+      },
+      {
+        "id": "c04",
+        "name": "语境词义",
+        "status": "pass",
+        "notes": "torcidas、quedé 按语境取义。"
+      },
+      {
+        "id": "c05",
+        "name": "语法解释",
+        "status": "pass",
+        "notes": "意外 se、deber de、lo + 形容词的解释均与本句一致。"
+      },
+      {
+        "id": "c06",
+        "name": "表达分类",
+        "status": "pass",
+        "notes": "para colmo 判为习语；deber de 判为语法性固定表达。"
+      },
+      {
+        "id": "c07",
+        "name": "语域与地区",
+        "status": "pass",
+        "notes": "未作地区断言；语域已标注。"
+      },
+      {
+        "id": "c08",
+        "name": "冗余",
+        "status": "pass",
+        "notes": "词汇与表达无重复收录。"
+      },
+      {
+        "id": "c09",
+        "name": "无依据声明",
+        "status": "pass",
+        "notes": "未标注 CEFR 或词频。"
+      },
+      {
+        "id": "c10",
+        "name": "Schema 结构",
+        "status": "pass",
+        "notes": "通过 JSON Schema 校验；ID 唯一性与交叉引用另由内置检查核对。"
+      },
+      {
+        "id": "c11",
+        "name": "练习可判定",
+        "status": "pass",
+        "notes": "5 题均有答案或评分标准。"
+      }
+    ],
+    "summary": "pass",
+    "validator": "jsonschema (Draft 2020-12, validated at build time)",
+    "reviewedAt": "2026-10-26T12:00:00Z"
+  }
+}

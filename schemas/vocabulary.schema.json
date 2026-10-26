@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://language-learning-skill.local/schemas/vocabulary.schema.json",
+  "title": "VocabularyItem",
+  "description": "One lexical item worth learning, with its context-specific sense and morphology.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "surface",
+    "lemma",
+    "pos",
+    "meaningInContext",
+    "sentenceRefs",
+    "priority",
+    "confidence",
+    "needsVerification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^v\\d{3,4}$"
+    },
+    "surface": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact substring of the sentence, including inflection, elision, or clitics."
+    },
+    "lemma": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Dictionary citation form."
+    },
+    "pos": {
+      "enum": [
+        "noun",
+        "verb",
+        "adjective",
+        "adverb",
+        "pronoun",
+        "determiner",
+        "article",
+        "preposition",
+        "conjunction",
+        "interjection",
+        "numeral",
+        "particle",
+        "proper-noun",
+        "phrase",
+        "other"
+      ]
+    },
+    "meaningInContext": {
+      "type": "string",
+      "minLength": 1,
+      "description": "One sense, as used in this sentence. Not a dictionary entry."
+    },
+    "morphology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "gender": {
+      "enum": ["masculine", "feminine", "neuter", "common", "not-applicable"]
+    },
+    "pronunciation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ipa": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "collocations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "translation"],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "translation": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "commonErrors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["term", "distinction"],
+        "properties": {
+          "term": {
+            "type": "string",
+            "minLength": 1
+          },
+          "distinction": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "sentenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^s\\d{2,4}-\\d{2,4}$"
+      }
+    },
+    "priority": {
+      "enum": ["high", "medium", "low"]
+    },
+    "confidence": {
+      "enum": ["high", "medium", "low"]
+    },
+    "needsVerification": {
+      "type": "boolean"
+    },
+    "region": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Only when the usage is regionally restricted and evidenced."
+    },
+    "externalLevel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "source"],
+      "description": "Level or frequency label stated by an external source. Never assigned by the skill itself.",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

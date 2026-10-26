@@ -1,0 +1,645 @@
+{
+  "schemaVersion": "1.0",
+  "meta": {
+    "title": "Le quartier",
+    "textLanguage": "fr",
+    "explanationLanguage": "zh-CN",
+    "genre": "article",
+    "mode": "study",
+    "createdAt": "2026-10-26T12:00:00Z",
+    "register": "Written narrative close to spoken French, with one colloquial turn",
+    "level": {
+      "strategy": "default-adaptive",
+      "declared": null
+    },
+    "notes": [
+      "示例用文本为本项目自拟，用于测试流程。",
+      "原文使用直撇号 ' ；法文排版在冒号、分号前保留空格，均按原样保留。"
+    ]
+  },
+  "source": {
+    "text": "Quand j'ai emménagé dans le quartier, je ne connaissais personne. Le premier mois, je me suis débrouillé tant bien que mal : je commandais tout en ligne, même le pain.\n\nPuis un matin, la boulangère m'a demandé si je comptais rester longtemps, et j'ai compris que, dans ce coin, on n'était pas si anonyme que ça. Depuis, on discute chaque samedi ; elle me raconte les potins du quartier et, en échange, je lui apporte des nouvelles de mes voyages. Il n'y a pas de quoi en faire toute une histoire, mais ces petits riens me tiennent compagnie.",
+    "characterCount": 541,
+    "sentenceCount": 5,
+    "integrity": "preserved"
+  },
+  "sentences": [
+    {
+      "id": "s01-01",
+      "paragraph": 1,
+      "order": 1,
+      "text": "Quand j'ai emménagé dans le quartier, je ne connaissais personne.",
+      "translation": "我刚搬进这个街区时，一个人都不认识。",
+      "vocabularyRefs": [
+        "v001"
+      ],
+      "grammarRefs": [
+        "g001"
+      ]
+    },
+    {
+      "id": "s01-02",
+      "paragraph": 1,
+      "order": 2,
+      "text": "Le premier mois, je me suis débrouillé tant bien que mal : je commandais tout en ligne, même le pain.",
+      "translation": "头一个月，我勉强应付：什么东西都在网上订，连面包也是。",
+      "vocabularyRefs": [
+        "v002"
+      ],
+      "expressionRefs": [
+        "e001"
+      ],
+      "grammarRefs": [
+        "g001",
+        "g002"
+      ]
+    },
+    {
+      "id": "s02-01",
+      "paragraph": 2,
+      "order": 3,
+      "text": "Puis un matin, la boulangère m'a demandé si je comptais rester longtemps, et j'ai compris que, dans ce coin, on n'était pas si anonyme que ça.",
+      "translation": "后来有一天早上，面包店老板娘问我是不是打算长住，我这才明白，在这一带，人其实并没有那么彼此陌生。",
+      "vocabularyRefs": [
+        "v003"
+      ],
+      "expressionRefs": [
+        "e003"
+      ],
+      "grammarRefs": [
+        "g001"
+      ]
+    },
+    {
+      "id": "s02-02",
+      "paragraph": 2,
+      "order": 4,
+      "text": "Depuis, on discute chaque samedi ; elle me raconte les potins du quartier et, en échange, je lui apporte des nouvelles de mes voyages.",
+      "translation": "从那以后，我们每个周六都聊上几句；她给我讲街坊的八卦，我则用旅途见闻作交换。",
+      "vocabularyRefs": [
+        "v004"
+      ],
+      "expressionRefs": [],
+      "grammarRefs": [
+        "g003"
+      ]
+    },
+    {
+      "id": "s02-03",
+      "paragraph": 2,
+      "order": 5,
+      "text": "Il n'y a pas de quoi en faire toute une histoire, mais ces petits riens me tiennent compagnie.",
+      "translation": "这本来也没什么好大惊小怪的，可这些小事让我觉得有人陪着。",
+      "vocabularyRefs": [
+        "v005"
+      ],
+      "expressionRefs": [
+        "e002",
+        "e004"
+      ],
+      "grammarRefs": []
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "v001",
+      "surface": "emménagé",
+      "lemma": "emménager",
+      "pos": "verb",
+      "meaningInContext": "搬入新住所、入住；此处指搬到这个街区。",
+      "morphology": {
+        "description": "第一组动词 emménager 的过去分词，用于 passé composé（j'ai emménagé）；助动词为 avoir。",
+        "features": [
+          "passé-composé",
+          "participe-passé"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Nous avons emménagé en septembre.",
+          "translation": "我们九月份搬进了新家。"
+        }
+      ],
+      "commonErrors": [
+        "与 déménager 混淆：déménager 是搬出、搬家离开，emménager 是搬入。",
+        "误用 être 作助动词：*je suis emménagé。"
+      ],
+      "confusions": [
+        {
+          "term": "emménager vs. déménager",
+          "distinction": "emménager 强调进入新住所；déménager 强调离开旧住所、搬迁这一动作。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "false-friend"
+      ]
+    },
+    {
+      "id": "v002",
+      "surface": "débrouillé",
+      "lemma": "se débrouiller",
+      "pos": "verb",
+      "meaningInContext": "自己想办法应付、设法对付过去；此处指在人生地不熟时勉强把生活安排下来。",
+      "morphology": {
+        "description": "代动词 se débrouiller 的 passé composé：助动词 être + 过去分词。自反代词 me 是直接宾语，过去分词与主语一致；本句说话者为男性单数，故为 débrouillé。",
+        "features": [
+          "pronominal",
+          "passé-composé",
+          "agreement-with-subject"
+        ]
+      },
+      "examples": [
+        {
+          "text": "Elle s'est débrouillée toute seule.",
+          "translation": "她一个人想办法应付过来了。"
+        }
+      ],
+      "commonErrors": [
+        "漏掉自反代词：*je suis débrouillé。",
+        "女性主语忘记配合：*elle s'est débrouillé。"
+      ],
+      "confusions": [
+        {
+          "term": "se débrouiller vs. s'en sortir",
+          "distinction": "se débrouiller 强调靠自己想办法应付日常事务；s'en sortir 更强调从困境中脱身或成功应对。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "pronominal",
+        "agreement"
+      ]
+    },
+    {
+      "id": "v003",
+      "surface": "boulangère",
+      "lemma": "boulanger",
+      "pos": "noun",
+      "meaningInContext": "面包店的女店主、女面包师；此处指街角面包店的老板娘。",
+      "morphology": {
+        "description": "boulanger 的阴性形式，词尾 -er 变为 -ère。",
+        "features": [
+          "feminine",
+          "singular"
+        ]
+      },
+      "gender": "feminine",
+      "examples": [
+        {
+          "text": "La boulangère connaît tous ses clients.",
+          "translation": "面包店老板娘认识所有顾客。"
+        }
+      ],
+      "confusions": [
+        {
+          "term": "boulangère vs. boulangerie",
+          "distinction": "boulangère 指人（女面包师/女店主）；boulangerie 指面包店这个场所。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "gender"
+      ]
+    },
+    {
+      "id": "v004",
+      "surface": "potins",
+      "lemma": "potin",
+      "pos": "noun",
+      "meaningInContext": "街坊间的闲话、八卦；此处略带亲切的调侃，不含恶意。",
+      "morphology": {
+        "description": "potin 的复数形式，加 -s。",
+        "features": [
+          "masculine",
+          "plural"
+        ]
+      },
+      "gender": "masculine",
+      "examples": [
+        {
+          "text": "Ce ne sont que des potins.",
+          "translation": "那不过是些闲话。"
+        }
+      ],
+      "confusions": [
+        {
+          "term": "potins vs. rumeurs",
+          "distinction": "potins 指日常闲话、八卦，语气可轻可重；rumeurs 指未经证实的传闻，通常更严肃。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "v005",
+      "surface": "riens",
+      "lemma": "rien",
+      "pos": "noun",
+      "meaningInContext": "小事、琐事；petits riens 指微不足道却让人感到温暖的小事。",
+      "morphology": {
+        "description": "rien 通常作代词（“没有什么”）；此处名词化，表示“小事”，并加 -s 构成复数，属较特殊的用法。",
+        "features": [
+          "nominalized",
+          "masculine",
+          "plural"
+        ]
+      },
+      "gender": "masculine",
+      "examples": [
+        {
+          "text": "Il se fâche pour un rien.",
+          "translation": "他为一点小事就生气。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-03"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "nominalization"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "id": "e001",
+      "text": "tant bien que mal",
+      "type": "idiom",
+      "literalMeaning": "无论好还是坏地。",
+      "meaningInContext": "勉强地、凑合地；表示做得不完美但总算应付过去了。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "examples": [
+        {
+          "text": "Il a réparé le vélo tant bien que mal.",
+          "translation": "他勉勉强强把自行车修好了。"
+        }
+      ],
+      "alternatives": [
+        "avec difficulté",
+        "comme on peut"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e002",
+      "text": "en faire toute une histoire",
+      "type": "idiom",
+      "literalMeaning": "把它做成整整一个故事。",
+      "meaningInContext": "小题大做、大惊小怪；本句说“没什么值得闹成一件大事的”。",
+      "register": "informal",
+      "sensitivity": "none",
+      "usageNotes": [
+        "常见完整结构：il n'y a pas de quoi en faire toute une histoire。",
+        "不要与答谢用语 il n'y a pas de quoi（“不客气”）混淆；本句前半段相同，但整体是另一个单位。"
+      ],
+      "examples": [
+        {
+          "text": "Ce n'est qu'une petite erreur, n'en fais pas toute une histoire.",
+          "translation": "这只是个小错误，别小题大做。"
+        }
+      ],
+      "alternatives": [
+        "en faire tout un plat",
+        "exagérer"
+      ],
+      "sentenceRefs": [
+        "s02-03"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e003",
+      "text": "pas si anonyme que ça",
+      "type": "grammatical-expression",
+      "literalMeaning": "并不那么匿名。",
+      "meaningInContext": "“并没有那么……”，用 si … que ça 弱化或反驳一个预期；此处指这一带其实没有那么彼此陌生。",
+      "register": "informal",
+      "sensitivity": "none",
+      "usageNotes": [
+        "框架为 ne … pas si + 形容词/副词 + que ça。",
+        "口语常用，写作中可出现于较随意的文体。"
+      ],
+      "examples": [
+        {
+          "text": "Ce n'est pas si difficile que ça.",
+          "translation": "这并没有那么难。"
+        }
+      ],
+      "alternatives": [
+        "pas tellement",
+        "moins … que prévu"
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e004",
+      "text": "me tiennent compagnie",
+      "type": "collocation",
+      "meaningInContext": "陪伴我、让我不感到孤单；此处主语是 ces petits riens。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "usageNotes": [
+        "规范形式为 tenir compagnie à quelqu'un；本句用间接宾语 me 置于动词前。",
+        "主语可以是人，也可以是事物（如音乐、小事）。"
+      ],
+      "examples": [
+        {
+          "text": "Je lui tiens compagnie le week-end.",
+          "translation": "我周末陪陪他/她。"
+        }
+      ],
+      "alternatives": [
+        "accompagner",
+        "être auprès de"
+      ],
+      "sentenceRefs": [
+        "s02-03"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g001",
+      "title": "passé composé 与 imparfait：事件与背景",
+      "explanation": "j'ai emménagé、m'a demandé、j'ai compris 用 passé composé，表示一个个完成的事件；je ne connaissais personne、je commandais 用 imparfait，描写当时的状态和习惯。两种时态的分工不是“过去”与“更早的过去”，而是事件前景与背景。",
+      "pattern": "passé composé (event) vs. imparfait (background, state, habit)",
+      "examples": [
+        {
+          "text": "Quand elle est arrivée, il pleuvait.",
+          "translation": "她到的时候，天正在下雨。"
+        }
+      ],
+      "pitfalls": [
+        "把所有过去动作都写成 imparfait，导致事件没有推进。",
+        "把 imparfait 误解为“比 passé composé 更早”。"
+      ],
+      "sentenceRefs": [
+        "s01-01",
+        "s01-02",
+        "s02-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g002",
+      "title": "代动词的复合过去时与过去分词配合",
+      "explanation": "se débrouiller 是代动词，复合过去时用 être。当自反代词是直接宾语时，过去分词与主语性数一致：je me suis débrouillé（男性单数），女性则为 débrouillée。若自反代词是间接宾语，则不配合，如 elle s'est lavé les mains。",
+      "pattern": "se + être + participe passé（自反代词为直接宾语时与主语配合）",
+      "examples": [
+        {
+          "text": "Elle s'est lavée.",
+          "translation": "她洗了澡。"
+        },
+        {
+          "text": "Elle s'est lavé les mains.",
+          "translation": "她洗了手。（自反代词为间接宾语，不配合）"
+        }
+      ],
+      "pitfalls": [
+        "认为所有代动词的过去分词都要配合。",
+        "女性主语忘记配合：*elle s'est débrouillé。"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g003",
+      "title": "depuis 与现在时",
+      "explanation": "法语用 depuis + 现在时表示动作从过去持续到现在：Depuis, on discute chaque samedi。英语对应现在完成进行时或现在完成时，但法语这里不用复合过去时，否则会理解为一次性的过去动作。",
+      "pattern": "depuis + présent",
+      "examples": [
+        {
+          "text": "J'habite ici depuis trois ans.",
+          "translation": "我在这里住了三年。"
+        }
+      ],
+      "pitfalls": [
+        "误用 passé composé：*Depuis, on a discuté chaque samedi，会被理解为过去完成的动作。",
+        "把 depuis 与 pendant 混淆：pendant 表示一段已结束的持续时间。"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    }
+  ],
+  "exercises": [
+    {
+      "id": "x001",
+      "type": "meaning",
+      "prompt": "在 “je me suis débrouillé tant bien que mal” 中，tant bien que mal 的意思是：",
+      "options": [
+        "A. 非常好地",
+        "B. 勉强地、凑合地",
+        "C. 时好时坏地（指情绪）",
+        "D. 故意地"
+      ],
+      "answer": {
+        "key": "B",
+        "explanation": "tant bien que mal 表示结果不理想但总算应付过去。A 相反；C 把它误解为情绪波动；D 与形式无关。"
+      },
+      "difficulty": "easy",
+      "relatedSentences": [
+        "s01-02"
+      ],
+      "relatedExpressions": [
+        "e001"
+      ]
+    },
+    {
+      "id": "x002",
+      "type": "cloze",
+      "prompt": "用括号中动词的正确形式填空：Depuis, on ______ (discuter) chaque samedi.",
+      "answer": {
+        "key": "discute",
+        "explanation": "depuis 表示从过去持续到现在，主句用现在时；主语 on 按第三人称单数变位，discuter 的第一组现在时形式为 discute。"
+      },
+      "difficulty": "easy",
+      "relatedSentences": [
+        "s02-02"
+      ],
+      "relatedGrammar": [
+        "g003"
+      ]
+    },
+    {
+      "id": "x003",
+      "type": "grammar-discrimination",
+      "prompt": "选择正确形式：Quand j'ai emménagé, je ne ______ personne.",
+      "options": [
+        "A. connaissais",
+        "B. ai connu",
+        "C. connaîtrai"
+      ],
+      "answer": {
+        "key": "A",
+        "explanation": "这里描写搬家时的背景状态（不认识任何人），用 imparfait。B 会把“认识”变成完成事件，且否定结构下语义不自然；C 是将来时。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s01-01"
+      ],
+      "relatedGrammar": [
+        "g001"
+      ]
+    },
+    {
+      "id": "x004",
+      "type": "translation",
+      "prompt": "把下面这句话译成中文，注意 en faire toute une histoire 的语气：Il n'y a pas de quoi en faire toute une histoire.",
+      "answer": {
+        "model": "这没什么好大惊小怪的。",
+        "rubric": [
+          "译出“不值得小题大做”的核心意思",
+          "不把 il n'y a pas de quoi 误译成“不客气”",
+          "中文自然，保留轻描淡写的语气"
+        ],
+        "explanation": "该句的 il n'y a pas de quoi 与后面的 en faire toute une histoire 构成一个整体，表示“没必要闹成一件大事”，不是答谢语。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s02-03"
+      ],
+      "relatedExpressions": [
+        "e002"
+      ]
+    },
+    {
+      "id": "x005",
+      "type": "recall-card",
+      "prompt": "用 tenir compagnie à quelqu'un 造一句法语（注意间接宾语的位置）。",
+      "answer": {
+        "model": "Je lui tiens compagnie le week-end.",
+        "rubric": [
+          "使用 tenir compagnie à 的正确结构",
+          "间接宾语代词位置正确",
+          "句子语法正确、语义自然"
+        ],
+        "explanation": "tenir compagnie à quelqu'un 的间接宾语可用 lui/leur 等前置，如 je lui tiens compagnie。"
+      },
+      "difficulty": "medium",
+      "relatedExpressions": [
+        "e004"
+      ]
+    }
+  ],
+  "qa": {
+    "checks": [
+      {
+        "id": "c01",
+        "name": "原文完整性",
+        "status": "pass",
+        "notes": "句子拼接与 source.txt 一致；法文标点空格保留。"
+      },
+      {
+        "id": "c02",
+        "name": "对照对齐",
+        "status": "pass",
+        "notes": "5/5 句。"
+      },
+      {
+        "id": "c03",
+        "name": "词形与原形",
+        "status": "pass",
+        "notes": "代动词与过去分词配合已说明；surface 均可在句中定位。"
+      },
+      {
+        "id": "c04",
+        "name": "语境词义",
+        "status": "pass",
+        "notes": "anonyme、riens 按语境处理。"
+      },
+      {
+        "id": "c05",
+        "name": "语法解释",
+        "status": "pass",
+        "notes": "时态分工、代动词配合、depuis 用法均与本句一致。"
+      },
+      {
+        "id": "c06",
+        "name": "表达分类",
+        "status": "pass",
+        "notes": "tant bien que mal 判为习语；tenir compagnie 判为搭配。"
+      },
+      {
+        "id": "c07",
+        "name": "语域与地区",
+        "status": "pass",
+        "notes": "未作地区断言；习语语域已标注。"
+      },
+      {
+        "id": "c08",
+        "name": "冗余",
+        "status": "pass",
+        "notes": "词汇与表达无重复收录。"
+      },
+      {
+        "id": "c09",
+        "name": "无依据声明",
+        "status": "pass",
+        "notes": "未标注 CEFR 或词频。"
+      },
+      {
+        "id": "c10",
+        "name": "Schema 结构",
+        "status": "pass",
+        "notes": "通过 JSON Schema 校验；ID 唯一性与交叉引用另由内置检查核对。"
+      },
+      {
+        "id": "c11",
+        "name": "练习可判定",
+        "status": "pass",
+        "notes": "5 题均有答案或评分标准。"
+      }
+    ],
+    "summary": "pass",
+    "validator": "jsonschema (Draft 2020-12, validated at build time)",
+    "reviewedAt": "2026-10-26T12:00:00Z"
+  }
+}

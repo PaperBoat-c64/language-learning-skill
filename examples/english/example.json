@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "1.0",
+  "meta": {
+    "title": "The Community Garden",
+    "textLanguage": "en",
+    "explanationLanguage": "zh-CN",
+    "genre": "article",
+    "mode": "study",
+    "createdAt": "2026-10-26T12:00:00Z",
+    "register": "Neutral narrative with mild informality",
+    "level": {
+      "strategy": "default-adaptive",
+      "declared": null
+    },
+    "notes": [
+      "示例用文本为本项目自拟，用于测试流程，不涉及第三方版权。"
+    ]
+  },
+  "source": {
+    "text": "Last spring, our neighborhood association decided to turn an abandoned lot into a community garden. We cobbled together a few grants, borrowed tools from whoever would lend them, and spent every Saturday digging.\n\nThe first harvest was modest, to put it mildly — a handful of radishes and a lot of very determined weeds. Still, by August the place had become a meeting point, and people who had lived on the same street for years were finally on first-name terms.",
+    "characterCount": 463,
+    "sentenceCount": 4,
+    "integrity": "preserved"
+  },
+  "sentences": [
+    {
+      "id": "s01-01",
+      "paragraph": 1,
+      "order": 1,
+      "text": "Last spring, our neighborhood association decided to turn an abandoned lot into a community garden.",
+      "translation": "去年春天，我们社区协会决定把一块废弃的空地改造成社区花园。",
+      "vocabularyRefs": [
+        "v001"
+      ],
+      "grammarRefs": []
+    },
+    {
+      "id": "s01-02",
+      "paragraph": 1,
+      "order": 2,
+      "text": "We cobbled together a few grants, borrowed tools from whoever would lend them, and spent every Saturday digging.",
+      "translation": "我们东拼西凑弄到几笔拨款，向愿意出借的人借来工具，每个周六都去挖土。",
+      "vocabularyRefs": [
+        "v002",
+        "v003"
+      ],
+      "expressionRefs": [
+        "e001"
+      ],
+      "grammarRefs": [
+        "g002"
+      ]
+    },
+    {
+      "id": "s02-01",
+      "paragraph": 2,
+      "order": 3,
+      "text": "The first harvest was modest, to put it mildly — a handful of radishes and a lot of very determined weeds.",
+      "translation": "第一次的收成客气点说很一般——就一小把萝卜，外加一堆长势顽强的杂草。",
+      "vocabularyRefs": [
+        "v004",
+        "v005"
+      ],
+      "expressionRefs": [
+        "e002",
+        "e004"
+      ],
+      "grammarRefs": []
+    },
+    {
+      "id": "s02-02",
+      "paragraph": 2,
+      "order": 4,
+      "text": "Still, by August the place had become a meeting point, and people who had lived on the same street for years were finally on first-name terms.",
+      "translation": "不过到了八月，这里已经成了一个聚会点，那些在同一条街上住了多年的人，终于熟到可以直呼其名了。",
+      "vocabularyRefs": [],
+      "expressionRefs": [
+        "e003"
+      ],
+      "grammarRefs": [
+        "g001",
+        "g003"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "v001",
+      "surface": "lot",
+      "lemma": "lot",
+      "pos": "noun",
+      "meaningInContext": "一块（通常空置的）土地、地块；此处指被废弃、准备改造成花园的空地。",
+      "morphology": {
+        "description": "单数可数名词，与 abandoned 构成名词短语的核心。",
+        "features": [
+          "singular",
+          "countable"
+        ]
+      },
+      "collocations": [
+        "a vacant lot",
+        "an empty lot",
+        "a parking lot"
+      ],
+      "examples": [
+        {
+          "text": "They bought a vacant lot at the edge of town.",
+          "translation": "他们在城边买了一块空地。"
+        }
+      ],
+      "confusions": [
+        {
+          "term": "lot vs. land",
+          "distinction": "lot 通常指划分好的一块地皮，常见于城市语境；land 更泛，指土地本身。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "contextual-sense"
+      ]
+    },
+    {
+      "id": "v002",
+      "surface": "grants",
+      "lemma": "grant",
+      "pos": "noun",
+      "meaningInContext": "（机构发放的）拨款、资助金；此处指为社区花园项目申请的几笔小额经费。",
+      "morphology": {
+        "description": "grant 的复数形式；本句中为可数名词。",
+        "features": [
+          "plural",
+          "countable"
+        ]
+      },
+      "collocations": [
+        "apply for a grant",
+        "a research grant",
+        "a small grant"
+      ],
+      "examples": [
+        {
+          "text": "The library applied for a grant to digitize its archives.",
+          "translation": "图书馆申请了一笔拨款来数字化馆藏。"
+        }
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "v003",
+      "surface": "digging",
+      "lemma": "dig",
+      "pos": "verb",
+      "meaningInContext": "挖（土）、翻土；此处指为开垦花园而挖地。",
+      "morphology": {
+        "description": "dig 的现在分词（动名词），拼写时双写 g。其过去式与过去分词均为 dug，属不规则变化，但本句未出现该形式。",
+        "features": [
+          "present-participle",
+          "gerund",
+          "spelling-double-consonant"
+        ]
+      },
+      "examples": [
+        {
+          "text": "They dug a trench along the fence.",
+          "translation": "他们沿着篱笆挖了一条沟。"
+        }
+      ],
+      "commonErrors": [
+        "误写为 *digged；过去式与过去分词均为 dug。"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "irregular"
+      ]
+    },
+    {
+      "id": "v004",
+      "surface": "modest",
+      "lemma": "modest",
+      "pos": "adjective",
+      "meaningInContext": "（数量或规模）不大的、不算出色的；这里形容收成，不含“谦虚”之意。",
+      "confusions": [
+        {
+          "term": "modest vs. moderate",
+          "distinction": "modest 强调“不大、低于预期”，常带含蓄的评价；moderate 强调“中等、适度”，不一定有“不如预期”的意味。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "contextual-sense"
+      ]
+    },
+    {
+      "id": "v005",
+      "surface": "determined",
+      "lemma": "determine",
+      "pos": "adjective",
+      "meaningInContext": "顽强的、不肯罢休的；此处把杂草拟人化，幽默地形容它们长势顽强。",
+      "morphology": {
+        "description": "determine 的过去分词作形容词；本句为拟人用法。",
+        "features": [
+          "past-participle",
+          "adjectival"
+        ]
+      },
+      "confusions": [
+        {
+          "term": "determined vs. stubborn",
+          "distinction": "determined 通常为褒义，指有决心；stubborn 偏贬义，指固执。本句借 determined 制造幽默。"
+        }
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "tags": [
+        "figurative"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "id": "e001",
+      "text": "cobbled together",
+      "type": "phrasal-verb",
+      "literalMeaning": "把零散的东西粗略地拼合起来。",
+      "meaningInContext": "在资源有限的情况下匆忙拼凑、凑齐；此处指凑齐几笔拨款。",
+      "register": "informal",
+      "sensitivity": "none",
+      "usageNotes": [
+        "常带“临时、将就、不精致”的意味，正式报告中较少使用。",
+        "宾语可置于 together 之前或之后：cobble a plan together。"
+      ],
+      "examples": [
+        {
+          "text": "They cobbled together a team at the last minute.",
+          "translation": "他们在最后一刻拼凑出了一支队伍。"
+        }
+      ],
+      "alternatives": [
+        "scrape together",
+        "piece together"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e002",
+      "text": "to put it mildly",
+      "type": "idiom",
+      "literalMeaning": "把它说得温和一些。",
+      "meaningInContext": "用于低调陈述：实际情况比刚才说的更严重或更糟，带有含蓄的调侃。",
+      "register": "informal",
+      "sensitivity": "none",
+      "usageNotes": [
+        "常作插入语，位置较灵活；本句置于句末。",
+        "后面不必再接具体说明，听者自行体会言外之意。"
+      ],
+      "examples": [
+        {
+          "text": "The hotel was dirty, to put it mildly.",
+          "translation": "那家旅馆很脏——说得客气点是这样。"
+        }
+      ],
+      "alternatives": [
+        "to say the least"
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "e003",
+      "text": "on first-name terms",
+      "type": "idiom",
+      "literalMeaning": "处于可以用名字相称的关系中。",
+      "meaningInContext": "关系熟到可以直接称呼对方的名字，而非头衔或姓氏。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "usageNotes": [
+        "常与 be 连用：be on first-name terms (with someone)。",
+        "美式英语中 on a first-name basis 更常见；本包不对地区偏好作断言。"
+      ],
+      "examples": [
+        {
+          "text": "After the trip, the whole team was on first-name terms.",
+          "translation": "旅行之后，整个团队都熟到直呼其名了。"
+        }
+      ],
+      "alternatives": [
+        "on a first-name basis"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false,
+      "notes": [
+        "地区变体的偏好未核实，故未标注 region。"
+      ]
+    },
+    {
+      "id": "e004",
+      "text": "a handful of",
+      "type": "collocation",
+      "meaningInContext": "少量的、一把（后接可数名词复数）；此处指一小把萝卜。",
+      "register": "neutral",
+      "sensitivity": "none",
+      "examples": [
+        {
+          "text": "Only a handful of people showed up.",
+          "translation": "只有少数几个人到场。"
+        }
+      ],
+      "alternatives": [
+        "a few",
+        "a small number of"
+      ],
+      "sentenceRefs": [
+        "s02-01"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g001",
+      "title": "过去完成时 had become：以过去某一时点为参照",
+      "explanation": "had + 过去分词表示在过去某个参照点之前已经完成的动作。本句用 by August 设定参照点，“the place had become a meeting point”说明到八月时这一变化已经完成。若改用一般过去时 became，变化本身会被放在八月，读者不会感到它在此前已经发生。",
+      "pattern": "had + past participle",
+      "examples": [
+        {
+          "text": "By the time we arrived, the garden had closed.",
+          "translation": "我们到的时候，花园已经关门了。"
+        }
+      ],
+      "pitfalls": [
+        "只有一个过去动作时滥用过去完成时，造成时间层混乱。",
+        "把过去完成时与一般过去时混用来叙述同一时间层的事件。"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "high",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g002",
+      "title": "并列谓语共享主语：cobbled, borrowed, spent",
+      "explanation": "三个一般过去时动词由逗号和 and 连接，共享主语 We；后两个分句省略了重复的主语。并列结构让三个动作显得连续而紧凑。翻译时不必逐词对应，但要保留动作的并列关系，不要译成因果。",
+      "pattern": "Subject + V1, V2, and V3",
+      "examples": [
+        {
+          "text": "She packed her bag, locked the door, and left.",
+          "translation": "她收拾好包，锁上门，离开了。"
+        }
+      ],
+      "pitfalls": [
+        "误把 borrowed 的主语理解为 tools。",
+        "把并列动作译成前后因果，改变原意。"
+      ],
+      "sentenceRefs": [
+        "s01-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    },
+    {
+      "id": "g003",
+      "title": "who 引导的限定性关系从句",
+      "explanation": "在“people who had lived on the same street for years”中，who 指 people，从句限定“哪些人”。从句内用过去完成时，表示在“终于熟络”之前他们已经住了多年。限定性从句前不加逗号；若加逗号，就变成补充说明，信息结构随之改变。",
+      "pattern": "noun + who + clause",
+      "examples": [
+        {
+          "text": "The neighbors who helped us had lived there for decades.",
+          "translation": "帮助我们的那些邻居已经在那里住了几十年。"
+        }
+      ],
+      "pitfalls": [
+        "在限定性从句前加逗号，把限定变成补充说明。",
+        "指人时误用 which。"
+      ],
+      "sentenceRefs": [
+        "s02-02"
+      ],
+      "priority": "medium",
+      "confidence": "high",
+      "needsVerification": false
+    }
+  ],
+  "exercises": [
+    {
+      "id": "x001",
+      "type": "meaning",
+      "prompt": "在 “The first harvest was modest” 中，modest 最接近的意思是：",
+      "options": [
+        "A. 谦虚的",
+        "B. 数量不大、不算出色的",
+        "C. 适度的、中等的",
+        "D. 朴素的（指衣着）"
+      ],
+      "answer": {
+        "key": "B",
+        "explanation": "modest 修饰 harvest，语境义是“收成不大、不怎么样”。A 用于形容人的态度；C 对应 moderate，强调适中；D 用于衣着或装饰。"
+      },
+      "difficulty": "easy",
+      "relatedSentences": [
+        "s02-01"
+      ],
+      "relatedVocabulary": [
+        "v004"
+      ]
+    },
+    {
+      "id": "x002",
+      "type": "cloze",
+      "prompt": "填空：We ______ a few grants, borrowed tools from whoever would lend them, and spent every Saturday digging.（用表示“东拼西凑”的短语动词，注意时态）",
+      "answer": {
+        "key": "cobbled together",
+        "explanation": "cobble together 表示用现有材料仓促拼凑；本句叙述过去，需与 borrowed、spent 一致，用过去式 cobbled。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s01-02"
+      ],
+      "relatedExpressions": [
+        "e001"
+      ]
+    },
+    {
+      "id": "x003",
+      "type": "grammar-discrimination",
+      "prompt": "选择正确形式：By August, the place ______ a meeting point, so people finally got to know each other.",
+      "options": [
+        "A. became",
+        "B. had become",
+        "C. has become"
+      ],
+      "answer": {
+        "key": "B",
+        "explanation": "by August 是过去的参照点，“成为聚会点”在它之前已完成，故用过去完成时。C 的现在完成时以现在为参照，与 by August 冲突；A 会把变化放在八月。"
+      },
+      "difficulty": "medium",
+      "relatedGrammar": [
+        "g001"
+      ]
+    },
+    {
+      "id": "x004",
+      "type": "translation",
+      "prompt": "把下面这句话译成中文，注意处理低调陈述：The first harvest was modest, to put it mildly.",
+      "answer": {
+        "model": "第一次的收成客气点说很一般。",
+        "rubric": [
+          "保留 to put it mildly 的低调、含蓄语气",
+          "modest 译为“不大、一般”，不译成“谦虚”",
+          "中文自然，不逐词硬译"
+        ],
+        "explanation": "to put it mildly 暗示实际情况更糟；译文应让读者感到说话人在刻意轻描淡写。"
+      },
+      "difficulty": "medium",
+      "relatedSentences": [
+        "s02-01"
+      ],
+      "relatedExpressions": [
+        "e002"
+      ]
+    },
+    {
+      "id": "x005",
+      "type": "recall-card",
+      "prompt": "用 on first-name terms 描述一个场景（一句英文）。",
+      "answer": {
+        "model": "After a few months, the neighbors were on first-name terms.",
+        "rubric": [
+          "短语形式正确（常见搭配 be on first-name terms）",
+          "语境体现“熟悉到可以直呼其名”",
+          "句子语法正确"
+        ],
+        "explanation": "该短语通常与 be 连用，主语为人。"
+      },
+      "difficulty": "medium",
+      "relatedExpressions": [
+        "e003"
+      ]
+    }
+  ],
+  "qa": {
+    "checks": [
+      {
+        "id": "c01",
+        "name": "原文完整性",
+        "status": "pass",
+        "notes": "句子拼接与 source.txt 一致（空白规范化后）。"
+      },
+      {
+        "id": "c02",
+        "name": "对照对齐",
+        "status": "pass",
+        "notes": "4/4 句有且仅有一条译文。"
+      },
+      {
+        "id": "c03",
+        "name": "词形与原形",
+        "status": "pass",
+        "notes": "digging 的拼写及 dig–dug–dug 的不规则变化已注明；surface 均可在句中定位。"
+      },
+      {
+        "id": "c04",
+        "name": "语境词义",
+        "status": "pass",
+        "notes": "modest、lot 均按语境取义。"
+      },
+      {
+        "id": "c05",
+        "name": "语法解释",
+        "status": "pass",
+        "notes": "过去完成时与关系从句的解释与本句一致。"
+      },
+      {
+        "id": "c06",
+        "name": "表达分类",
+        "status": "pass",
+        "notes": "cobble together 判为短语动词；a handful of 判为搭配。"
+      },
+      {
+        "id": "c07",
+        "name": "语域与地区",
+        "status": "unverified",
+        "notes": "on first-name terms 的英式/美式偏好未核实，未作地区标注。"
+      },
+      {
+        "id": "c08",
+        "name": "冗余",
+        "status": "pass",
+        "notes": "未重复收录同一词位。"
+      },
+      {
+        "id": "c09",
+        "name": "无依据声明",
+        "status": "pass",
+        "notes": "未标注 CEFR、词频或词源。"
+      },
+      {
+        "id": "c10",
+        "name": "Schema 结构",
+        "status": "pass",
+        "notes": "通过 JSON Schema 校验；ID 唯一性与交叉引用另由内置检查核对。"
+      },
+      {
+        "id": "c11",
+        "name": "练习可判定",
+        "status": "pass",
+        "notes": "5 题均有 key/model/rubric。"
+      }
+    ],
+    "summary": "pass-with-disclosures",
+    "validator": "jsonschema (Draft 2020-12, validated at build time)",
+    "reviewedAt": "2026-10-26T12:00:00Z"
+  }
+}

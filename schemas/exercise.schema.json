@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://language-learning-skill.local/schemas/exercise.schema.json",
+  "title": "Exercise",
+  "description": "One exercise item grounded in the text's taught material, with a checkable answer or an explicit rubric.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "prompt", "answer", "difficulty"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^x\\d{3,4}$"
+    },
+    "type": {
+      "enum": [
+        "meaning",
+        "cloze",
+        "collocation",
+        "rewrite",
+        "grammar-discrimination",
+        "translation",
+        "imitation",
+        "speaking-scenario",
+        "recall-card"
+      ]
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "options": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "answer": {
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["key"] },
+        { "required": ["model"] },
+        { "required": ["rubric"] }
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The single correct option/answer for closed items."
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "description": "A model answer for open items."
+        },
+        "rubric": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "At least two criteria for open production items."
+        },
+        "explanation": {
+          "type": "string"
+        }
+      }
+    },
+    "difficulty": {
+      "enum": ["easy", "medium", "hard"]
+    },
+    "relatedSentences": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^s\\d{2,4}-\\d{2,4}$"
+      }
+    },
+    "relatedVocabulary": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^v\\d{3,4}$"
+      }
+    },
+    "relatedExpressions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^e\\d{3,4}$"
+      }
+    },
+    "relatedGrammar": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^g\\d{3,4}$"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
